@@ -93,6 +93,7 @@
 
   /* 列印／存 PDF 版面 */
   *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;}
+  .item,.bp,.secban,.insight,.mini,.band,.masthead{break-inside:avoid;page-break-inside:avoid;}
   @media print{
     body{background:#fff;}
     .wrap{box-shadow:none;max-width:100%;}
@@ -274,7 +275,7 @@ function dlPDF(){
     image:{type:'jpeg',quality:0.92},
     html2canvas:{scale:2,useCORS:true},
     jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},
-    pagebreak:{mode:['css','legacy']}
+    pagebreak:{mode:['css','legacy'],avoid:['.item','.bp','.secban','.insight','.mini','.band','.masthead']}
   }).from(document.querySelector('.wrap')).save().then(function(){
     btn.textContent='⬇ 下載 PDF';btn.disabled=false;
   });
