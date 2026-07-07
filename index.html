@@ -117,7 +117,7 @@
     <h1>📡 保險業 AI・Agent・數位轉型</h1>
     <div class="en">DAILY STRATEGIC INTELLIGENCE FOR EXECUTIVES</div>
   </div>
-  <div class="datebar"><span>2026 年 7 月 7 日（週二）</span><span class="right">第 2026-07-07 期<button class="dlbtn" onclick="window.print()">⬇ 下載 PDF</button></span></div>
+  <div class="datebar"><span>2026 年 7 月 7 日（週二）</span><span class="right">第 2026-07-07 期<button class="dlbtn" id="dlpdf" onclick="dlPDF()">⬇ 下載 PDF</button></span></div>
 
   <!-- ════════ 台灣動態 ════════ -->
   <div class="band"><span class="tag">台灣動態</span><span class="rule"></span><span class="stars">★★★★★</span></div>
@@ -261,5 +261,24 @@
   </div>
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+function dlPDF(){
+  var btn=document.getElementById('dlpdf');
+  btn.textContent='產生中…';btn.disabled=true;
+  var name=document.title.replace(/[📡\s|｜:：]/g,'_').replace(/_+/g,'_')+'.pdf';
+  html2pdf().set({
+    margin:0,
+    filename:name,
+    image:{type:'jpeg',quality:0.92},
+    html2canvas:{scale:2,useCORS:true},
+    jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},
+    pagebreak:{mode:['css','legacy']}
+  }).from(document.querySelector('.wrap')).save().then(function(){
+    btn.textContent='⬇ 下載 PDF';btn.disabled=false;
+  });
+}
+</script>
 </body>
 </html>
