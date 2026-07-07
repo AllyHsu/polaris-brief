@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📡 數據暨AI發展部｜保險業 AI・Agent・數位轉型 2026-07-07</title>
+<meta property="og:title" content="數據暨AI發展部｜保險業 AI、Agent、數位轉型 2026-07-07">
+<meta property="og:description" content="每日策略情報：台灣保險 AI 動態、全球 AI Agent、企業 AI 平台與 Best Practice。">
+
+<!-- ═══════════ 追蹤設定（擇一或並用，設定好後移除註解） ═══════════
+【選項 A：Google Analytics 4】到 analytics.google.com 建立資源，把 G-XXXXXXXXXX 換成你的評估 ID。
+GA4 預設的「加強型評估」會自動記錄頁面瀏覽與外部連結點擊，不用寫額外程式。
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+【選項 B：GoatCounter（免費、免 cookie、設定 2 分鐘）】到 goatcounter.com 註冊，把 MYCODE 換成你的代碼。
+<script data-goatcounter="https://MYCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+═══════════════════════════════════════════════════════════════ -->
+
+<style>
+  :root{
+    --navy:#14355c; --navy-deep:#0d2440; --accent:#c8a24b; --red:#b5342d;
+    --ink:#2b2b2b; --grey:#6b7280; --line:#e3e0d8; --bg:#f4f2ec; --card:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;}
+  .wrap{max-width:720px;margin:0 auto;background:var(--card);box-shadow:0 0 24px rgba(0,0,0,.07);}
+
+  /* 報頭 */
+  .masthead{background:var(--navy-deep);color:#fff;padding:34px 32px 26px;border-bottom:4px solid var(--accent);}
+  .masthead .kicker{font-size:12px;letter-spacing:4px;color:var(--accent);margin-bottom:8px;}
+  .masthead h1{font-size:26px;font-weight:700;letter-spacing:1px;line-height:1.4;}
+  .masthead .en{font-size:13px;color:#9db3cc;margin-top:6px;letter-spacing:2px;}
+  .datebar{display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:#dbe4ef;font-size:13px;padding:8px 32px;letter-spacing:1px;}
+
+  /* 分區標題（工商時報式字距帶） */
+  .band{display:flex;align-items:center;gap:14px;margin:38px 32px 18px;}
+  .band .tag{background:var(--navy);color:#fff;font-size:15px;font-weight:700;letter-spacing:8px;padding:6px 18px 6px 26px;}
+  .band.alt .tag{background:var(--red);}
+  .band .rule{flex:1;height:1px;background:var(--line);}
+  .band .stars{font-size:12px;color:var(--accent);letter-spacing:2px;}
+
+  /* 新聞條目 */
+  .item{padding:0 32px;margin-bottom:26px;}
+  .item h3{font-size:17.5px;line-height:1.5;margin-bottom:6px;}
+  .item h3 a{color:var(--navy);text-decoration:none;border-bottom:1px solid transparent;}
+  .item h3 a:hover{border-bottom-color:var(--accent);}
+  .item p{font-size:14.5px;color:#444;margin-bottom:6px;}
+  .why{font-size:13.5px;background:#f7f4ec;border-left:3px solid var(--accent);padding:8px 14px;color:#555;}
+  .why b{color:var(--navy);}
+  .src{font-size:12.5px;color:var(--grey);margin-top:6px;}
+  .src a{color:var(--grey);}
+
+  /* Best Practice 卡片 */
+  .bp{margin:0 32px 26px;border:1px solid var(--line);border-top:3px solid var(--red);padding:22px 24px;background:#fffdf8;}
+  .bp h3{font-size:17.5px;color:var(--navy);margin-bottom:10px;}
+  .bp p{font-size:14.5px;color:#444;margin-bottom:8px;}
+  .bp .label{display:inline-block;font-size:12px;font-weight:700;color:var(--red);letter-spacing:1px;margin-right:4px;}
+  .bp .takeaway{background:var(--navy);color:#fff;padding:12px 16px;font-size:14px;margin-top:12px;line-height:1.7;}
+  .bp .takeaway b{color:var(--accent);}
+
+  /* 洞察 / 行動 / 學習 */
+  .insight{margin:0 32px 26px;background:var(--navy-deep);color:#fff;padding:26px 28px;text-align:center;}
+  .insight .label{font-size:12px;letter-spacing:4px;color:var(--accent);display:block;margin-bottom:10px;}
+  .insight p{font-size:17px;font-weight:600;line-height:1.8;}
+  .mini{margin:0 32px 22px;border:1px solid var(--line);padding:16px 20px;font-size:14px;color:#444;}
+  .mini .label{font-weight:700;color:var(--navy);display:block;margin-bottom:4px;font-size:13px;letter-spacing:2px;}
+  .mini a{color:var(--navy);}
+
+  /* 頁尾 */
+  .foot{background:var(--navy-deep);color:#8fa5bf;font-size:12px;padding:22px 32px;text-align:center;line-height:2;}
+  .foot .brand{color:#fff;letter-spacing:2px;font-size:13px;}
+  .note{font-size:11.5px;color:#748ba6;}
+  @media (max-width:480px){
+    .masthead{padding:26px 20px 20px;} .masthead h1{font-size:21px;}
+    .datebar,.item,.foot{padding-left:20px;padding-right:20px;}
+    .band{margin-left:20px;margin-right:20px;} .bp,.insight,.mini{margin-left:20px;margin-right:20px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div class="kicker">數 據 暨 A I 發 展 部</div>
+    <h1>📡 保險業 AI・Agent・數位轉型</h1>
+    <div class="en">DAILY STRATEGIC INTELLIGENCE FOR EXECUTIVES</div>
+  </div>
+  <div class="datebar"><span>2026 年 7 月 7 日（週二）</span><span>第 2026-07-07 期</span></div>
+
+  <!-- ════════ 台灣動態 ════════ -->
+  <div class="band"><span class="tag">台灣動態</span><span class="rule"></span><span class="stars">★★★★★</span></div>
+
+  <div class="item">
+    <h3><a href="https://newtalk.tw/news/view/2026-07-07/1045829?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">金管會核准玉山金併三商美邦人壽，9 月 1 日改名「玉山人壽」</a></h3>
+    <p>金管會 7 月 7 日核准玉山金以股份轉換取得三商美邦人壽 100% 股權，交易規模約新台幣 467 億元，合併預計 9 月 1 日生效。玉山金承諾三年內維持逾萬名員工勞動條件與保戶權益不變。</p>
+    <div class="why"><b>對新光的啟示：</b>玉山以數位金融見長，三商壽將成為市場新的數位化壽險競爭者。其整合速度是台新新光金合併綜效的直接對照組，建議追蹤其系統整合與通路綜效時程作為外部基準。</div>
+    <div class="src">來源：Newtalk</div>
+  </div>
+
+  <div class="item">
+    <h3><a href="https://www.blocktempo.com/taiwan-insurance-blockchain/?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">11 家保險業者「保全／理賠聯盟鏈」上線試辦，新光人壽列首波</a></h3>
+    <p>金管會同意國泰、富邦、新光、台灣人壽等 11 家業者以區塊鏈試辦「保全／理賠聯盟鏈」，試辦期 6 個月：保戶向任一業者申請，即同步通報其他同業受理，初期涵蓋基本資料變更與醫療險理賠。</p>
+    <div class="why"><b>對新光的啟示：</b>聯盟鏈解決「進件」，AI 解決「處理」。把通報事件直接銜接內部 AI 理賠流程，才能在 6 個月試辦期內做出可見的體驗差異。</div>
+    <div class="src">來源：動區 BlockTempo</div>
+  </div>
+
+  <div class="item">
+    <h3><a href="https://udn.com/news/story/7239/9601048?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">新光人壽 × 台新銀行推「Go健康GoFit」，合併綜效首發</a></h3>
+    <p>新光人壽與台新銀行 Richart Life 合作推出健康行為集點計畫，串接逾 350 萬數位客戶生態圈，為台新新光金合併後首批跨子公司協作產品，方向對標 AIA Vitality 的 Health Engagement 模式。</p>
+    <div class="why"><b>對新光的啟示：</b>下一步關鍵是資料策略——確保健康行為數據有清楚的治理、同意機制與 AI 應用路徑，避免只做點數行銷而錯過資料資產累積。</div>
+    <div class="src">來源：經濟日報</div>
+  </div>
+
+  <div class="item">
+    <h3><a href="https://money.udn.com/money/story/5613/9570625?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">金管會擬引導保險資金投資 AI 算力中心；壽險業 GenAI 導入率達 67%</a></h3>
+    <p>金管會研議將 AI 算力中心列入保險資金可投資的策略性產業。另金融業已有 61 家導入生成式 AI，保險業占 18 家。</p>
+    <div class="why"><b>對新光的啟示：</b>67% 導入率意味「有沒有導入」已不是差異化，「導入深度」才是；投資部門亦可預研算力中心作為長期資產配置標的。</div>
+    <div class="src">來源：經濟日報</div>
+  </div>
+
+  <!-- ════════ 全球 AI AGENT ════════ -->
+  <div class="band"><span class="tag">全球 AI Agent</span><span class="rule"></span></div>
+
+  <div class="item">
+    <h3><a href="https://www.anthropic.com/news/claude-sonnet-5?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Anthropic 發布 Claude Sonnet 5：Agentic 能力躍升，Azure 正式 GA</a></h3>
+    <p>Terminal-Bench 2.1 得分 80.5%（前代 67%），支援 1M token context，優惠價 $2/$10 per M tokens。7 月 2 日於 Azure GA，AWS 同步上架——中階價位模型的 Agentic 能力已達過去旗艦水準。</p>
+    <div class="why"><b>對新光的啟示：</b>Claude on Azure（GA）提供「合規採購＋高 Agentic 能力＋可控成本」路徑，適合文件處理、核保輔助等 Agent 場景的模型候選。</div>
+    <div class="src">來源：Anthropic、TechTimes、AWS</div>
+  </div>
+
+  <div class="item">
+    <h3><a href="https://aws.amazon.com/blogs/aws/modernize-your-workflows-amazon-workspaces-now-gives-ai-agents-their-own-desktop-preview/?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Amazon WorkSpaces for AI Agents GA：Agent 直接操作遺留系統，不需 API</a></h3>
+    <p>AI Agent 可在託管虛擬桌面中以電腦視覺操作 ERP、CRM、大型主機畫面，免 API 整合，並支援使用者即時接管與 MCP tool forwarding。</p>
+    <div class="why"><b>對新光的啟示：</b>可盤點仰賴人工或 RPA 的核心系統作業（保全變更、跨系統轉登），評估「Agent 操作桌面」作為過渡方案——先自動化、後現代化。</div>
+    <div class="src">來源：AWS Blog</div>
+  </div>
+
+  <div class="item">
+    <h3><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Microsoft Copilot Studio：Agent-to-Agent 通訊與 Sales Agent 正式 GA</a></h3>
+    <p>A2A 通訊允許 Agent 之間交換資訊、委派任務、跨系統協作，代表企業 Agent 架構進入「多 Agent 分工協作」階段，Agent 治理成為必修課。</p>
+    <div class="why"><b>對新光的啟示：</b>富邦理賠智能助理即建構於 Copilot Studio。若評估同一技術棧，應直接以「多 Agent＋治理」為目標架構，而非單點 Chatbot，避免日後重工。</div>
+    <div class="src">來源：Microsoft Learn</div>
+  </div>
+
+  <!-- ════════ 保險 AI RADAR ════════ -->
+  <div class="band alt"><span class="tag">保險 AI Radar</span><span class="rule"></span></div>
+  <div class="item">
+    <p><b>今日無重大更新。</b>追蹤名單（AIA、Manulife、FWD、Allianz、AXA、MetLife、Prudential、Sun Life、Zurich、Chubb、Munich Re、Swiss Re）本週無新的重大 AI 公告。</p>
+    <p>補充觀察：美國產險巨頭 Travelers 發布自建保險專屬 LLM，為本週保險業最重要 AI 動態（詳見 Best Practice）；Insurance Journal 於 7 月 8 日舉辦免費線上「AI 核保工具展示日」，反映核保 AI 工具市場快速成熟。</p>
+    <div class="src">來源：<a href="https://www.insurancejournal.com/news/national/2026/07/07/876352.htm?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Insurance Journal</a></div>
+  </div>
+
+  <!-- ════════ 企業 AI 平台 ════════ -->
+  <div class="band"><span class="tag">企業 AI 平台</span><span class="rule"></span></div>
+
+  <div class="item">
+    <h3><a href="https://www.snowflake.com/en/blog/enterprise-ai-agents-grounded-context/?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Snowflake Cortex Sense：Agent 準確率 24% → 86% 的關鍵是「共享脈絡層」</a></h3>
+    <p>Snowflake 為企業 Agent 建立共享情境基底層，自動整合查詢歷史、metadata 與語意視圖。官方測試：困難問題準確率 24.1% → 86.3%，單次查詢成本 $1.76 → $0.59。</p>
+    <div class="why"><b>對新光的啟示：</b>啟動大型 Agent 專案前，先確認企業語意層／metadata 治理成熟度——這是 Agent 準確率的先決條件，也是最值得先投資的基礎工程。</div>
+    <div class="src">來源：Snowflake Blog</div>
+  </div>
+
+  <div class="item">
+    <h3><a href="https://www.salesforce.com/ap/news/press-releases/2026/07/06/as-ai-agents-transform-commerce-salesforce-unleashes-its-biggest-agentforce-commerce-release-yet/?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Salesforce Agentforce 三大商務 Agent GA，推出「按解決計價」模式</a></h3>
+    <p>Shopper／Buyer／Merchant Agent 正式 GA 並原生整合 ChatGPT；同步推出 pay-per-resolution 計價的 Help Agent——AI 服務開始以「成果」而非「授權數」計價。</p>
+    <div class="why"><b>對新光的啟示：</b>客服場景未來採購 AI 時，可將「成果計價」納入商務談判，把供應商收入與實際解決率綁定，降低導入風險。</div>
+    <div class="src">來源：Salesforce</div>
+  </div>
+
+  <div class="item">
+    <h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-bedrock-agentcore-increases-default-runtime-quota-limits/?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">AWS Bedrock AgentCore 擴容至 5,000 並發；Agents Classic 7/30 退場</a></h3>
+    <p>AgentCore 配額大增代表 Agent 工作負載進入量產規模；2023 年才推出的 Bedrock Agents 即將停收新客戶，提醒 Agent 基礎設施仍在快速汰換期。</p>
+    <div class="why"><b>對新光的啟示：</b>平台選型應將「供應商產品線汰換風險」納入評估，優先選擇有明確遷移路徑與抽象層（如 MCP）的架構。</div>
+    <div class="src">來源：AWS、Databricks</div>
+  </div>
+
+  <!-- ════════ BEST PRACTICE ════════ -->
+  <div class="band alt"><span class="tag">Best Practice</span><span class="rule"></span></div>
+  <div class="bp">
+    <h3>Travelers：自建保險專屬 LLM，把百年機構知識變成模型能力</h3>
+    <p><span class="label">問題</span>通用 LLM 不懂核保準則、條款與理賠判例；數十年機構知識散落數百萬份文件，難以取用。</p>
+    <p><span class="label">解法</span>以數百萬份公司文件訓練保險領域專屬模型 TravelersLLM，作為 AI 生態系核心元件，支撐核保分析與機構知識檢索。</p>
+    <p><span class="label">價值</span>在數萬道保險問題測試中，以更低成本、更快速度勝過市售通用模型；機構知識轉化為可複用的企業資產。</p>
+    <p><span class="label">成功原因</span>競爭優勢來自「前沿 AI × 數十年專屬資料 × 保險專業知識」的結合，並把 LLM 定位為基礎設施而非單點應用。</p>
+    <div class="takeaway"><b>新光人壽可以如何借鏡？</b>不必自建 LLM，可走輕量路線：先盤點並結構化核保準則、理賠判例、客服 QA 等知識資產，以 RAG 讓現成模型掛載驗證效益，再視效益評估領域微調。<b>模型可以換，資料資產不會白做。</b></div>
+    <p class="src" style="margin-top:10px;">來源：<a href="https://www.insurancejournal.com/news/national/2026/07/02/876053.htm?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Insurance Journal</a></p>
+  </div>
+
+  <!-- ════════ 洞察／行動／學習 ════════ -->
+  <div class="insight">
+    <span class="label">EXECUTIVE INSIGHT</span>
+    <p>「當同業開始把數十年保險知識訓練成自己的模型，<br>訂閱通用 AI 只是入場券——機構資料資產才是護城河。」</p>
+  </div>
+
+  <div class="mini">
+    <span class="label">🎯 TODAY ACTION</span>
+    今天確認新光人壽在「保全／理賠聯盟鏈」試辦中的內部受理流程與系統介接窗口，評估聯盟鏈通報事件能否直接觸發內部 AI 理賠／保全流程，而非落入人工收件佇列。
+  </div>
+
+  <div class="mini">
+    <span class="label">📚 TODAY'S LEARNING</span>
+    <a href="https://www.snowflake.com/en/blog/enterprise-ai-agents-grounded-context/?utm_source=polaris&utm_medium=newsletter&utm_campaign=20260707" target="_blank">Snowflake Blog：Grounding Enterprise AI Agents in Context</a>——用可量化實驗（準確率 24%→86%、成本 $1.76→$0.59）說明企業資料脈絡層的價值，是向內部溝通「為什麼要先投資語意層」的最佳素材。
+  </div>
+
+  <div class="foot">
+    <div class="brand">數據暨AI發展部</div>
+    保險業 AI・Agent・數位轉型 每日策略情報<br>
+    <span class="note">本報告由 AI 策略情報系統自動生成。部分數據引自媒體與官方新聞稿，重要決策前請以原始來源驗證。<br>All Rights Reserved © 數據暨AI發展部 2026</span>
+  </div>
+
+</div>
+</body>
+</html>
