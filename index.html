@@ -273,7 +273,7 @@ function dlPDF(){
     margin:0,
     filename:name,
     image:{type:'jpeg',quality:0.92},
-    html2canvas:{scale:2,useCORS:true},
+    html2canvas:{scale:2,useCORS:true,ignoreElements:function(el){return el.id==='dlpdf';}},
     jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},
     pagebreak:{mode:['css','legacy'],avoid:['.item','.bp','.secban','.insight','.mini','.band','.masthead']}
   }).from(document.querySelector('.wrap')).save().then(function(){
